@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Namespace_Modulename>
+            <version>0.1.0</version>
+        </Namespace_Modulename>
+    </modules>
+    <frontend>
+        <events>
+            <load_customer_quote_before>
+                <observers>
+                    <clear_cart_customer_logged>
+                        <class>module/observer</class>
+                        <method>clearCartLoggedCustomer</method>
+                        <type>singleton</type>
+                    </clear_cart_customer_logged>
+                </observers>
+            </load_customer_quote_before>
+        </events>
+    </frontend>
+</config>
